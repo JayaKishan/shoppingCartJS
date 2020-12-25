@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <main>
+    <div class="basket">
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">All Items</li>
+        </ul>
+      </div>
+      <div class="container">
+        <main class="grid" id="itemsDisplay">
+        </main>
+      </div>
+    </div>
+    <aside>
+      <div class="cart">
+        <div class="cart-labels">
+          <div style="flex-grow: 6">Items</div>
+          <div style="flex-grow: 3">Qty</div>
+          <div style="flex-grow: 2">Price</div>
+        </div>
+        <div id="cartDetails"></div>
+        <div class="cart-total" id="tp">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">0</div>
+          <div class="">
+            items
+          </div>
+        </div>
+        <div class="cart-checkout">
+          <button class="checkout-cta">Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+<!-- <script type="text/javascript" src="./data/items.json"></script> -->
+<script src="./scripts/getData.js"></script>
+</html>
